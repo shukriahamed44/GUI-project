@@ -3,3 +3,11 @@
  font-family: Arial, Helvetica, sans-serif;
  font-size: large;
 }
+
+/* App.css */
+button {
+  background-color: blue;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
