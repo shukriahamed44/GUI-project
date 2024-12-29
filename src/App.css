@@ -1,10 +1,27 @@
 /* App.css */
-header {
+
+/* Global styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+  
+}
+
+header, footer {
   background-color: #333;
   color: white;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 10px;
   text-align: center;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+}
+
+header {
+  font-size: 1.5rem;
+  background-image: url("istockphoto-466619660-612x612.jpg");
+  object-fit:contain;
 }
 
 header nav ul {
@@ -13,7 +30,7 @@ header nav ul {
 }
 
 header nav ul li {
-  display:inline;
+  display: inline;
   margin: 0 10px;
 }
 
@@ -23,11 +40,95 @@ header nav ul li a {
 }
 
 footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px;
-  position: fixed;
+  position: relative;
   bottom: 0;
   width: 100%;
+  font-size: 0.9rem;
+}
+
+/* Image Section */
+.image-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.jet-image {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #333;
+  border-radius: 10px;
+}
+
+.image-description {
+  font-family: Arial, sans-serif;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Carousel */
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 100%;
+  max-width: 1200px;  /* Limiting max width for large screens */
+  height: 50vh;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+}
+
+/* Carousel Buttons */
+.carousel-button {
+  background-color: rgba(0, 0, 0, 0.5); /* Less opaque background */
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 2rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  border-radius: 2 0%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8); /* Darker hover effect */
+  transform: translateY(-50%) scale(1.1); /* Button zoom effect */
+}
+
+/* Positioning buttons */
+.carousel-button.prev {
+  left: 100px;
+  margin-left: 50px;
+ 
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .carousel-image {
+    height: 40vh; /* Adjust image height for smaller screens */
+  }
+
+  .carousel-button {
+    padding: 12px;
+    font-size: 1.5rem;
+  }
 }
