@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './App.css';
+/*import Header from './components/Header';*/
 
 function App() {
   return (
@@ -55,7 +56,6 @@ function ImageCarousel() {
 function Header() {
   return (
     <header>
-      <h1>Private Aviation Line</h1>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -64,6 +64,7 @@ function Header() {
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <h1 style = {{fontSize: "10rem"}}>Private Aviation Line</h1>
     </header>
   );
 }
