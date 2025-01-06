@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
 
-/*helooddsaaaaaaaaaaaaaaaaaaa*/
+/*helooddsaaaaaaaaa*/
 function App() {
   return (
     <div>
