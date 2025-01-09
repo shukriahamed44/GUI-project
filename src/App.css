@@ -118,7 +118,7 @@ footer {
 /* Responsive adjustments */
 @media (max-width: 768px) {
   header nav ul li {
-    display: block;
+    display: block;/* Adjust image height for smaller screens */
     margin: 5px 0;
   }
 
