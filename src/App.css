@@ -29,7 +29,7 @@ header nav ul {
 }
 
 header nav ul li {
-  display: inline;
+  display: inline;/*abcd*/
   margin: 0 10px;
 }
 
