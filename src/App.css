@@ -131,3 +131,38 @@ footer {
     font-size: 1.5rem;
   }
 }
+
+.booking_parent {
+  display: flex;
+  width: 80%;
+  height: 100px;
+  margin: 50px auto;
+  background-color: #070707;
+  color: #555;
+  border-radius: 10px;
+  position: relative;
+}
+
+.booking_child {
+  color: #555;
+  border-right: 1px solid #313131;
+  /* Vertical divider */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.booking_child:last-child {
+  border-right: none;
+  /* Remove border from last child */
+
+}
+
+.dropdown {
+  background-color: #070707;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  width: 80%;
+}
