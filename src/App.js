@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import './App.css';
 
-/*fsdddddsdsdsd
-dsds
-dsdsdddddddsdd*/
+
 function App() {
   return (
     <div>
