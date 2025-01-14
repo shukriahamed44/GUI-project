@@ -1,6 +1,22 @@
 import React, { useState } from "react";
 import './App.css';
 
+function App() {
+  return (
+    <div>
+      <Header />
+      <main>
+        <h1>Welcome to Our Private Aviation Company</h1>
+        <p>Fly with us and experience luxury!</p>
+        <section>
+          <h2>Our Premium Fleet</h2>
+          <ImageCarousel />
+        </section>
+      </main>
+      <Footer />
+    </div>
+  );
+}
 
 
 function ImageCarousel() {
