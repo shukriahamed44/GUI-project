@@ -1,0 +1,107 @@
+.dest{
+    display: flex;
+    width: 100%;
+    background-color: #f9f9f9;
+    color: #1a1a1a; 
+    margin-top: 50px;
+    margin-bottom: 0px;
+}
+
+.membership{
+    display: flex;
+    width: 100%;
+    background-color: #f9f9f9;
+    color: #1a1a1a; 
+    padding-top: 10px;
+    margin-top: 0px;
+    border-top: 1.5px solid #979797;
+    margin-bottom: 0px;
+}
+
+.membertext{
+  color: #5d87b8;
+  margin-top: 0px;
+}
+
+.snippet{
+  border-top: 1px solid #9ac9f1;
+  width: 75%;
+  color: #232323;
+  margin-left: 120px;
+  margin-top: 30px;
+  padding-left: 0px;
+  padding-top: 0px;
+}
+
+.carousel {
+  display: flex;
+  
+  margin-left: 0px;
+  margin-top: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-image {
+  width: 40%;
+  
+  /* Limiting max width for large screens */
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: opacity 1s ease-in-out;
+  /* Smooth transition for opacity */
+}
+
+/* Carousel Buttons */
+.carousel-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Less opaque background */
+  color: white;
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 2rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  border-radius: 2 0%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  /* Darker hover effect */
+  transform: translateY(-50%) scale(1.1);
+  /* Button zoom effect */
+}
+
+/* Positioning buttons */
+.carousel-button.prev {
+  right: 20px;
+}
+
+.carousel-button.next {
+  right: 20px;
+}
+
+/* Responsive adjustments 
+@media (max-width: 768px) {
+  header nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  .carousel-image {
+    height: 40vh;
+    /* Adjust image height for smaller screens 
+  }
+
+  .carousel-button {
+    padding: 12px;
+    font-size: 1.5rem;
+  }
+}*/

@@ -1,0 +1,26 @@
+.cTA-button {
+    background-color: #1A1A1A;
+    margin-top: 0px;
+    padding-top: 0%;
+    color: white;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-50%);
+    z-index: 10;
+    border-radius: 60px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .cTA-button:hover {
+    background-color: transparent;
+    /* Make the background transparent */
+    color: #070707;
+    /* Change text color */
+    transform: translateY(-50%) scale(1.05);
+    /* Apply hover transformation */
+    border: 3px solid #070707;
+    /* Add a 2px solid border */
+  }

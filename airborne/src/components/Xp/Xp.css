@@ -1,0 +1,24 @@
+.der{
+    background-color: aqua;
+    color: brown;
+    margin-left: 0px;
+}
+
+.xptext{
+    color: #85b2db;
+    margin: 0 0 0 0;
+    margin-bottom: 0px;
+    padding-left: 120px;
+    padding-bottom: 0px
+    
+}
+
+.xpsnippet{
+    border-top: 1px solid #9ac9f1;
+    width: 75%;
+    color: #fefefe;
+    margin-left: 120px;
+    margin-top: 30px;
+    padding-left: 0px;
+    padding-top: 0px;
+}
