@@ -1,0 +1,33 @@
+function ImageCarousel() {
+  const images = [
+    { src: "/src/images/car_test01.png", alt: "Jet 1" },
+    { src: "/src/images/2022Q3-web-2-2-1024x462.jpg", alt: "Jet 2" },
+    { src: "/src/images/Empire-Aviation-1.jpg", alt: "Jet 3" },
+  ];
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  return (
+    <div className="carousel">
+      <button className="carousel-button prev" onClick={handlePrev} aria-label="Previous Image">
+        &#8249;
+      </button>
+      <img
+        src={images[currentIndex].src}
+        alt={images[currentIndex].alt}
+        className="carousel-image"
+      />
+      <button className="carousel-button next" onClick={handleNext} aria-label="Next Image">
+        &#8250;
+      </button>
+    </div>
+  );
+}

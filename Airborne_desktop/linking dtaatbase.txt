@@ -1,0 +1,15 @@
+create a product class(and add code)
+create databse class(and add code)
+
+Nuget tool console "Add-Migration initial "(prompt it and it creates a class with all the data)
+BUild -> Build Solution -> then @Package manager CONSOLE -> 
+"Update-Database " (should update teh files in the relevant folder specified in the class)
+
+
+MainWndow.xaml (window + css like code file) has its ownn c# file(MainWindow.xaml.cs) where teh logic code is added.
+
+MainWindow.xaml.CS
+____________________
+ GIve a name to "Add product"(Click = "Add_Product") from th emainwinsow from its css code
+ and double click on the button to automatically create its function (to be defined ) in th ewindow's 
+C# file.

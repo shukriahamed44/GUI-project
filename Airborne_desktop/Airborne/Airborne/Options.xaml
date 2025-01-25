@@ -1,0 +1,133 @@
+﻿<Page x:Class="Airborne.Options"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Airborne"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Background="white"
+      Title="Options">
+    <Page.Resources>
+        <Storyboard x:Key="BackgroundAnimation">
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Grid.Background).(LinearGradientBrush.GradientStops)[0].Color"
+                                              Duration="0:0:5" RepeatBehavior="Forever">
+                <LinearColorKeyFrame Value="LightBlue" KeyTime="0:0:0" />
+                <LinearColorKeyFrame Value="CadetBlue" KeyTime="0:0:2" />
+                <LinearColorKeyFrame Value="#4c739e" KeyTime="0:0:4" />
+            </ColorAnimationUsingKeyFrames>
+            <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(Grid.Background).(LinearGradientBrush.GradientStops)[1].Color"
+                                              Duration="0:0:5" RepeatBehavior="Forever">
+                <LinearColorKeyFrame Value = "LightBlue" KeyTime="0:0:0" />
+                <LinearColorKeyFrame Value="CornflowerBlue" KeyTime="0:0:2" />
+                <LinearColorKeyFrame Value="#4c739e" KeyTime="0:0:4" />
+            </ColorAnimationUsingKeyFrames>
+        </Storyboard>
+    </Page.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="8*"/>
+            <RowDefinition Height="2*"/>
+        </Grid.RowDefinitions>
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Grid.Row="0" Grid.Column="0">
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                    <GradientStop Color="#4c739e" Offset="0.0" />
+                    <GradientStop Color="#98c7ef" Offset="1.0" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            
+            <Grid.Triggers>
+            <EventTrigger RoutedEvent="Loaded">
+                <BeginStoryboard Storyboard="{StaticResource BackgroundAnimation}" />
+                
+            </EventTrigger>
+        </Grid.Triggers>
+
+        </Grid>
+
+        <TextBlock Grid.Row="0" Grid.Column="1"
+                   FontFamily="Helvetica"
+                   FontSize="27"
+                   FontWeight="Medium"
+                   Padding="5 5 5 5"
+                   Foreground="#4d4d4d"
+                   HorizontalAlignment="center"
+                   Text="Admin Portal" />
+
+        <StackPanel Grid.Row="1" Grid.ColumnSpan="2">
+            <Button Content="Bookings"
+                    Width="250"
+                    FontFamily="helvetica"
+                    FontSize="20"
+                    Padding="5 5 5 5"
+                    Background="#4d4d4d"
+                    Foreground="White"
+                    HorizontalAlignment="Center"
+                  
+                    Margin="0 60 0 10" Click="Bookings_button"/>
+            <Button Content="Manage Airports"
+                    Width="250"
+                    FontFamily="helvetica"
+                    FontSize="20"
+                    Padding="5 5 5 5"
+                    Background="#4d4d4d"
+                    Foreground="White"
+                    HorizontalAlignment="Center"
+      
+                    Margin="0 5 0 10" Click="Airportslist_button"/>
+            <Button Content="Manage Aircrafts"
+                    Width="250"
+                    FontFamily="helvetica"
+                    FontSize="20"
+                    Padding="5 5 5 5"
+                    Background="#4d4d4d"
+                    Foreground="White"
+                    HorizontalAlignment="Center"
+                    Margin="0 5 0 10" Click="ManageAircrafts_button"/>
+            
+            <Button Content="Manage User Accounts"
+                    Width="250"
+                    FontFamily="helvetica"
+                    FontSize="20"
+                    Padding="5 5 5 5"
+                    Background="#4d4d4d"
+                    Foreground="White"
+                    HorizontalAlignment="Center"
+                    Click="ManageUsers_button"
+                    Margin="0 5 0 10"/>
+
+            <Rectangle Height="1" Fill="#4d4d4d" Margin="0 600 0 0"/>
+
+        </StackPanel>
+
+        <Grid Grid.Row="2" Grid.Column="0">
+            <Border>
+                <Image Source="imagesdesktopapp/main_logo_gray.png"
+                       Height="40"
+                       HorizontalAlignment="Left"
+                       Margin="40 5 5 5 "
+                       Opacity="0.5"
+                       />
+            </Border>
+        </Grid>
+
+        <Button Grid.Row="2" Grid.Column="1"
+                Margin="40 20 40 20"
+                FontFamily="helvetica"
+                FontSize="22"
+                Foreground="white"
+                Background="#9f9f9f" Click="sign_out_button" 
+                >Sign Out</Button>
+
+
+    </Grid>
+</Page>

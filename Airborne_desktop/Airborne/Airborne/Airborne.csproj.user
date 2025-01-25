@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="AddAircraft.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddAirport.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddModUserAC.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="AddorModifyBooking.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="LoginPage.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManageAircrafts.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManageAirports.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManageBookings.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ManageUserAccounts.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Options.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AddAircraft.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddAirport.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddModUserAC.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="AddorModifyBooking.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="LoginPage.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManageAircrafts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManageAirports.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManageBookings.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ManageUserAccounts.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Options.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Window1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,82 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Fonts\CreatoDisplay-Black.otf" />
+    <None Remove="Fonts\CreatoDisplay-BlackItalic.otf" />
+    <None Remove="Fonts\CreatoDisplay-Bold.otf" />
+    <None Remove="Fonts\CreatoDisplay-BoldItalic.otf" />
+    <None Remove="Fonts\CreatoDisplay-ExtraBold.otf" />
+    <None Remove="Fonts\CreatoDisplay-ExtraBoldItalic.otf" />
+    <None Remove="Fonts\CreatoDisplay-Light.otf" />
+    <None Remove="Fonts\CreatoDisplay-LightItalic.otf" />
+    <None Remove="Fonts\CreatoDisplay-Medium.otf" />
+    <None Remove="Fonts\CreatoDisplay-MediumItalic.otf" />
+    <None Remove="Fonts\CreatoDisplay-Regular.otf" />
+    <None Remove="Fonts\CreatoDisplay-RegularItalic.otf" />
+    <None Remove="Fonts\CreatoDisplay-Thin.otf" />
+    <None Remove="Fonts\CreatoDisplay-ThinItalic.otf" />
+    <None Remove="imagesdesktopapp\aircrafts.png" />
+    <None Remove="imagesdesktopapp\airport_management.png" />
+    <None Remove="imagesdesktopapp\bookings.png" />
+    <None Remove="imagesdesktopapp\lnd_pg.png" />
+    <None Remove="imagesdesktopapp\main_logo.jpg" />
+    <None Remove="imagesdesktopapp\main_logo_gray.png" />
+    <None Remove="imagesdesktopapp\userac.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Fonts\CreatoDisplay-Black.otf" />
+    <Resource Include="Fonts\CreatoDisplay-BlackItalic.otf" />
+    <Resource Include="Fonts\CreatoDisplay-Bold.otf" />
+    <Resource Include="Fonts\CreatoDisplay-BoldItalic.otf" />
+    <Resource Include="Fonts\CreatoDisplay-ExtraBold.otf" />
+    <Resource Include="Fonts\CreatoDisplay-ExtraBoldItalic.otf" />
+    <Resource Include="Fonts\CreatoDisplay-Light.otf" />
+    <Resource Include="Fonts\CreatoDisplay-LightItalic.otf" />
+    <Resource Include="Fonts\CreatoDisplay-Medium.otf" />
+    <Resource Include="Fonts\CreatoDisplay-MediumItalic.otf" />
+    <Resource Include="Fonts\CreatoDisplay-Regular.otf" />
+    <Resource Include="Fonts\CreatoDisplay-RegularItalic.otf" />
+    <Resource Include="Fonts\CreatoDisplay-Thin.otf" />
+    <Resource Include="Fonts\CreatoDisplay-ThinItalic.otf" />
+    <Resource Include="imagesdesktopapp\aircrafts.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="imagesdesktopapp\airport_management.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="imagesdesktopapp\bookings.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="imagesdesktopapp\lnd_pg.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="imagesdesktopapp\main_logo.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="imagesdesktopapp\main_logo_gray.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="imagesdesktopapp\userac.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+</Project>
