@@ -1,0 +1,347 @@
+[1mdiff --git a/Airborne_desktop/Airborne/.vs/Airborne/CopilotIndices/17.12.38.29086/SemanticSymbols.db-shm b/Airborne_desktop/Airborne/.vs/Airborne/CopilotIndices/17.12.38.29086/SemanticSymbols.db-shm[m
+[1mindex f386038..7dc8344 100644[m
+Binary files a/Airborne_desktop/Airborne/.vs/Airborne/CopilotIndices/17.12.38.29086/SemanticSymbols.db-shm and b/Airborne_desktop/Airborne/.vs/Airborne/CopilotIndices/17.12.38.29086/SemanticSymbols.db-shm differ
+[1mdiff --git a/Airborne_desktop/Airborne/.vs/Airborne/CopilotIndices/17.12.38.29086/SemanticSymbols.db-wal b/Airborne_desktop/Airborne/.vs/Airborne/CopilotIndices/17.12.38.29086/SemanticSymbols.db-wal[m
+[1mindex 1042e0f..3b1b2e1 100644[m
+Binary files a/Airborne_desktop/Airborne/.vs/Airborne/CopilotIndices/17.12.38.29086/SemanticSymbols.db-wal and b/Airborne_desktop/Airborne/.vs/Airborne/CopilotIndices/17.12.38.29086/SemanticSymbols.db-wal differ
+[1mdiff --git a/Airborne_desktop/Airborne/.vs/Airborne/DesignTimeBuild/.dtbcache.v2 b/Airborne_desktop/Airborne/.vs/Airborne/DesignTimeBuild/.dtbcache.v2[m
+[1mindex d63a419..036f7d1 100644[m
+Binary files a/Airborne_desktop/Airborne/.vs/Airborne/DesignTimeBuild/.dtbcache.v2 and b/Airborne_desktop/Airborne/.vs/Airborne/DesignTimeBuild/.dtbcache.v2 differ
+[1mdiff --git a/Airborne_desktop/Airborne/.vs/Airborne/FileContentIndex/b54cc7da-3aa8-49ed-b5e9-442d89d21dba.vsidx b/Airborne_desktop/Airborne/.vs/Airborne/FileContentIndex/b54cc7da-3aa8-49ed-b5e9-442d89d21dba.vsidx[m
+[1mdeleted file mode 100644[m
+[1mindex b242f33..0000000[m
+Binary files a/Airborne_desktop/Airborne/.vs/Airborne/FileContentIndex/b54cc7da-3aa8-49ed-b5e9-442d89d21dba.vsidx and /dev/null differ
+[1mdiff --git a/Airborne_desktop/Airborne/.vs/Airborne/v17/DocumentLayout.backup.json b/Airborne_desktop/Airborne/.vs/Airborne/v17/DocumentLayout.backup.json[m
+[1mindex 14e464b..5f6dc12 100644[m
+[1m--- a/Airborne_desktop/Airborne/.vs/Airborne/v17/DocumentLayout.backup.json[m
+[1m+++ b/Airborne_desktop/Airborne/.vs/Airborne/v17/DocumentLayout.backup.json[m
+[36m@@ -2,6 +2,18 @@[m
+   "Version": 1,[m
+   "WorkspaceRootPath": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\",[m
+   "Documents": [[m
+[32m+[m[32m    {[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|c:\\users\\shukri\\desktop\\react-project\\airborne_desktop\\airborne\\airborne\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|solutionrelative:airborne\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|c:\\users\\shukri\\desktop\\react-project\\airborne_desktop\\airborne\\airborne\\aircraft_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|solutionrelative:airborne\\aircraft_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[32m+[m[32m    },[m
+[32m+[m[32m    {[m
+[32m+[m[32m      "AbsoluteMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|c:\\users\\shukri\\desktop\\react-project\\airborne_desktop\\airborne\\airborne\\airborne.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",[m
+[32m+[m[32m      "RelativeMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|solutionrelative:airborne\\airborne.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"[m
+[32m+[m[32m    },[m
+     {[m
+       "AbsoluteMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|c:\\users\\shukri\\desktop\\react-project\\airborne_desktop\\airborne\\airborne\\options.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+       "RelativeMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|solutionrelative:airborne\\options.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[36m@@ -18,10 +30,6 @@[m
+       "AbsoluteMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|c:\\users\\shukri\\desktop\\react-project\\airborne_desktop\\airborne\\airborne\\userdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+       "RelativeMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|solutionrelative:airborne\\userdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+     },[m
+[31m-    {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|c:\\users\\shukri\\desktop\\react-project\\airborne_desktop\\airborne\\airborne\\aircraft_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+[31m-      "RelativeMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|solutionrelative:airborne\\aircraft_details.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[31m-    },[m
+     {[m
+       "AbsoluteMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|c:\\users\\shukri\\desktop\\react-project\\airborne_desktop\\airborne\\airborne\\manageuseraccounts.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",[m
+       "RelativeMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|solutionrelative:airborne\\manageuseraccounts.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"[m
+[36m@@ -58,10 +66,6 @@[m
+       "AbsoluteMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|c:\\users\\shukri\\desktop\\react-project\\airborne_desktop\\airborne\\airborne\\manageaircrafts.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",[m
+       "RelativeMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|solutionrelative:airborne\\manageaircrafts.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"[m
+     },[m
+[31m-    {[m
+[31m-      "AbsoluteMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|c:\\users\\shukri\\desktop\\react-project\\airborne_desktop\\airborne\\airborne\\airborne.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",[m
+[31m-      "RelativeMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|solutionrelative:airborne\\airborne.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"[m
+[31m-    },[m
+     {[m
+       "AbsoluteMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|c:\\users\\shukri\\desktop\\react-project\\airborne_desktop\\airborne\\airborne\\migrations\\20250125075428_initial_v3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",[m
+       "RelativeMoniker": "D:0:0:{5E7C3B90-B824-4A61-903D-D3CDB4B89A68}|Airborne\\Airborne.csproj|solutionrelative:airborne\\migrations\\20250125075428_initial_v3.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"[m
+[36m@@ -134,7 +138,7 @@[m
+       "DocumentGroups": [[m
+         {[m
+           "DockedWidth": 200,[m
+[31m-          "SelectedChildIndex": 27,[m
+[32m+[m[32m          "SelectedChildIndex": 2,[m
+           "Children": [[m
+             {[m
+               "$type": "Bookmark",[m
+[36m@@ -146,7 +150,19 @@[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 2,[m
+[32m+[m[32m              "DocumentIndex": 0,[m
+[32m+[m[32m              "Title": "Window1.xaml",[m
+[32m+[m[32m              "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\Window1.xaml",[m
+[32m+[m[32m              "RelativeDocumentMoniker": "Airborne\\Window1.xaml",[m
+[32m+[m[32m              "ToolTip": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\Window1.xaml*",[m
+[32m+[m[32m              "RelativeToolTip": "Airborne\\Window1.xaml*",[m
+[32m+[m[32m              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",[m
+[32m+[m[32m              "WhenOpened": "2025-01-25T09:49:02.045Z",[m
+[32m+[m[32m              "EditorCaption": ""[m
+[32m+[m[32m            },[m
+[32m+[m[32m            {[m
+[32m+[m[32m              "$type": "Document",[m
+[32m+[m[32m              "DocumentIndex": 5,[m
+               "Title": "20250125085128_initial_v4.cs",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\Migrations\\20250125085128_initial_v4.cs",[m
+               "RelativeDocumentMoniker": "Airborne\\Migrations\\20250125085128_initial_v4.cs",[m
+[36m@@ -154,12 +170,11 @@[m
+               "RelativeToolTip": "Airborne\\Migrations\\20250125085128_initial_v4.cs",[m
+               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2025-01-25T08:51:28.742Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-25T08:51:28.742Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 6,[m
+[32m+[m[32m              "DocumentIndex": 8,[m
+               "Title": "ManageUserAccounts.xaml.cs",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\ManageUserAccounts.xaml.cs",[m
+               "RelativeDocumentMoniker": "Airborne\\ManageUserAccounts.xaml.cs",[m
+[36m@@ -167,12 +182,11 @@[m
+               "RelativeToolTip": "Airborne\\ManageUserAccounts.xaml.cs",[m
+               "ViewState": "AgIAACgAAAAAAAAAAAAcwDEAAAAJAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2025-01-25T08:27:58.931Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-25T08:27:58.931Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 8,[m
+[32m+[m[32m              "DocumentIndex": 10,[m
+               "Title": "AddModUserAC.xaml.cs",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\AddModUserAC.xaml.cs",[m
+               "RelativeDocumentMoniker": "Airborne\\AddModUserAC.xaml.cs",[m
+[36m@@ -180,24 +194,22 @@[m
+               "RelativeToolTip": "Airborne\\AddModUserAC.xaml.cs",[m
+               "ViewState": "AgIAABoAAAAAAAAAAAAYwCwAAAAJAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2025-01-25T08:20:42.515Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-25T08:20:42.515Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 9,[m
+[32m+[m[32m              "DocumentIndex": 11,[m
+               "Title": "AddModUserAC.xaml",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\AddModUserAC.xaml",[m
+               "RelativeDocumentMoniker": "Airborne\\AddModUserAC.xaml",[m
+               "ToolTip": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\AddModUserAC.xaml",[m
+               "RelativeToolTip": "Airborne\\AddModUserAC.xaml",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",[m
+[31m-              "WhenOpened": "2025-01-25T08:08:30.441Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-25T08:08:30.441Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 3,[m
+[32m+[m[32m              "DocumentIndex": 6,[m
+               "Title": "UserDetails.cs",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\UserDetails.cs",[m
+               "RelativeDocumentMoniker": "Airborne\\UserDetails.cs",[m
+[36m@@ -205,36 +217,33 @@[m
+               "RelativeToolTip": "Airborne\\UserDetails.cs",[m
+               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAMAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2025-01-25T08:05:43.291Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-25T08:05:43.291Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 5,[m
+[32m+[m[32m              "DocumentIndex": 7,[m
+               "Title": "ManageUserAccounts.xaml",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\ManageUserAccounts.xaml",[m
+               "RelativeDocumentMoniker": "Airborne\\ManageUserAccounts.xaml",[m
+               "ToolTip": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\ManageUserAccounts.xaml",[m
+               "RelativeToolTip": "Airborne\\ManageUserAccounts.xaml",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",[m
+[31m-              "WhenOpened": "2025-01-25T08:00:58.466Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-25T08:00:58.466Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 1,[m
+[32m+[m[32m              "DocumentIndex": 4,[m
+               "Title": "Options.xaml",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\Options.xaml",[m
+               "RelativeDocumentMoniker": "Airborne\\Options.xaml",[m
+[31m-              "ToolTip": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\Options.xaml*",[m
+[31m-              "RelativeToolTip": "Airborne\\Options.xaml*",[m
+[32m+[m[32m              "ToolTip": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\Options.xaml",[m
+[32m+[m[32m              "RelativeToolTip": "Airborne\\Options.xaml",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",[m
+[31m-              "WhenOpened": "2025-01-19T18:50:45.747Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-19T18:50:45.747Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 15,[m
+[32m+[m[32m              "DocumentIndex": 16,[m
+               "Title": "20250125075428_initial_v3.cs",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\Migrations\\20250125075428_initial_v3.cs",[m
+               "RelativeDocumentMoniker": "Airborne\\Migrations\\20250125075428_initial_v3.cs",[m
+[36m@@ -242,12 +251,11 @@[m
+               "RelativeToolTip": "Airborne\\Migrations\\20250125075428_initial_v3.cs",[m
+               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2025-01-25T07:54:29.107Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-25T07:54:29.107Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 7,[m
+[32m+[m[32m              "DocumentIndex": 9,[m
+               "Title": "ManageAircrafts.xaml.cs",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\ManageAircrafts.xaml.cs",[m
+               "RelativeDocumentMoniker": "Airborne\\ManageAircrafts.xaml.cs",[m
+[36m@@ -255,37 +263,34 @@[m
+               "RelativeToolTip": "Airborne\\ManageAircrafts.xaml.cs",[m
+               "ViewState": "AgIAACUAAAAAAAAAAAAMwFkAAAAMAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2025-01-25T06:45:59.697Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-25T06:45:59.697Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 4,[m
+[32m+[m[32m              "DocumentIndex": 1,[m
+               "Title": "Aircraft_Details.cs",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\Aircraft_Details.cs",[m
+               "RelativeDocumentMoniker": "Airborne\\Aircraft_Details.cs",[m
+               "ToolTip": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\Aircraft_Details.cs",[m
+               "RelativeToolTip": "Airborne\\Aircraft_Details.cs",[m
+[31m-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAsAAAAAAAAAA==",[m
+[32m+[m[32m              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA0AAAAWAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2025-01-25T06:33:00.93Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-25T06:33:00.93Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 13,[m
+[32m+[m[32m              "DocumentIndex": 15,[m
+               "Title": "ManageAircrafts.xaml",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\ManageAircrafts.xaml",[m
+               "RelativeDocumentMoniker": "Airborne\\ManageAircrafts.xaml",[m
+               "ToolTip": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\ManageAircrafts.xaml",[m
+               "RelativeToolTip": "Airborne\\ManageAircrafts.xaml",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",[m
+[31m-              "WhenOpened": "2025-01-25T06:23:46.824Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-25T06:23:46.824Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 25,[m
+[32m+[m[32m              "DocumentIndex": 26,[m
+               "Title": "20250121202047_initial_v2.cs",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\Migrations\\20250121202047_initial_v2.cs",[m
+               "RelativeDocumentMoniker": "Airborne\\Migrations\\20250121202047_initial_v2.cs",[m
+[36m@@ -293,12 +298,11 @@[m
+               "RelativeToolTip": "Airborne\\Migrations\\20250121202047_initial_v2.cs",[m
+               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2025-01-21T20:20:49.884Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-21T20:20:49.884Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 12,[m
+[32m+[m[32m              "DocumentIndex": 14,[m
+               "Title": "AddorModifyBooking.xaml.cs",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\AddorModifyBooking.xaml.cs",[m
+               "RelativeDocumentMoniker": "Airborne\\AddorModifyBooking.xaml.cs",[m
+[36m@@ -306,24 +310,22 @@[m
+               "RelativeToolTip": "Airborne\\AddorModifyBooking.xaml.cs",[m
+               "ViewState": "AgIAABsAAAAAAAAAAAAYwCwAAAAMAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2025-01-21T19:22:10.059Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-21T19:22:10.059Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 11,[m
+[32m+[m[32m              "DocumentIndex": 13,[m
+               "Title": "AddorModifyBooking.xaml",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\AddorModifyBooking.xaml",[m
+               "RelativeDocumentMoniker": "Airborne\\AddorModifyBooking.xaml",[m
+               "ToolTip": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\AddorModifyBooking.xaml",[m
+               "RelativeToolTip": "Airborne\\AddorModifyBooking.xaml",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",[m
+[31m-              "WhenOpened": "2025-01-21T18:14:13.589Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-21T18:14:13.589Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 17,[m
+[32m+[m[32m              "DocumentIndex": 18,[m
+               "Title": "ManageBookings.xaml.cs",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\ManageBookings.xaml.cs",[m
+               "RelativeDocumentMoniker": "Airborne\\ManageBookings.xaml.cs",[m
+[36m@@ -331,24 +333,22 @@[m
+               "RelativeToolTip": "Airborne\\ManageBookings.xaml.cs",[m
+               "ViewState": "AgIAAA8AAAAAAAAAAAAAAHoAAAAIAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2025-01-21T17:50:30.176Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-21T17:50:30.176Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 16,[m
+[32m+[m[32m              "DocumentIndex": 17,[m
+               "Title": "ManageBookings.xaml",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\ManageBookings.xaml",[m
+               "RelativeDocumentMoniker": "Airborne\\ManageBookings.xaml",[m
+               "ToolTip": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\ManageBookings.xaml",[m
+               "RelativeToolTip": "Airborne\\ManageBookings.xaml",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",[m
+[31m-              "WhenOpened": "2025-01-21T17:46:10.823Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-21T17:46:10.823Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 18,[m
+[32m+[m[32m              "DocumentIndex": 19,[m
+               "Title": "Booking.cs",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\Booking.cs",[m
+               "RelativeDocumentMoniker": "Airborne\\Booking.cs",[m
+[36m@@ -356,12 +356,11 @@[m
+               "RelativeToolTip": "Airborne\\Booking.cs",[m
+               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAMAAAASAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2025-01-21T17:37:15.875Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m[32m              "WhenOpened": "2025-01-21T17:37:15.875Z"[m
+             },[m
+             {[m
+               "$type": "Document",[m
+[31m-              "DocumentIndex": 19,[m
+[32m+[m[32m              "DocumentIndex": 20,[m
+               "Title": "AddAirport.xaml.cs",[m
+               "DocumentMoniker": "C:\\Users\\Shukri\\Desktop\\react-project\\Airborne_desktop\\Airborne\\Airborne\\AddAirport.xaml.cs",[m
+               "RelativeDocumentMoniker": "Airborne\\AddAirport.xaml.cs",[m
+[36m@@ -369,24 +368,22 @@[m
+               "RelativeToolTip": "Airborne\\AddAirport.xaml.cs",[m
+               "ViewState": "AgIAABUAAAAAAAAAAIA+wCAAAAAMAAAAAAAAAA==",[m
+               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",[m
+[31m-              "WhenOpened": "2025-01-20T19:29:01.089Z",[m
+[31m-              "EditorCaption": ""[m
+[32m+[m

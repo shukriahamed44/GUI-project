@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from 'react';
 import './App.css';
+
 
 import Xp from './components/Xp/Xp';
 import Cta from './components/Cta/Cta';
@@ -108,7 +109,28 @@ function Footer() {
 
 
 
+
+
+
+
+
 function Booking() {
+
+
+  const [airports, setAirports] = useState([]); // State to store fetched airport names
+  const [departure, setDeparture] = useState(""); // State for selected departure
+  const [arrival, setArrival] = useState(""); // State for selected arrival
+
+  // Fetch airport names from the API
+  useEffect(() => {
+    fetch("http://localhost:3000/airports") // Replace with your backend API URL
+      .then((response) => response.json())
+      .then((data) => setAirports(data))
+      .catch((error) => console.error("Error fetching airports:", error));
+  }, []);
+
+
+
   return (
     <div className="booking_parent">
       <div className="booking_child" style={{ width: "10%" }}>
@@ -117,7 +139,28 @@ function Booking() {
           className="imageonefirst"
         />
       </div>
+    
+
+      {/*Departure Dropdown */}
       <div className="booking_child" style={{ width: "25%" }}>
+        <h1 className="booking-text">Departure</h1>
+        <select
+          className="dropdown"
+          value={departure}
+          onChange={(e) => setDeparture(e.target.value)}
+        >
+          <option value="" hidden>
+            &#9662; Select Departure
+          </option>
+          {airports.map((airport, index) => (
+            <option key={index} value={airport.airport_Name}>
+              {airport.airport_Name}
+            </option>
+          ))}
+        </select>
+      </div>
+     
+      {/*<div className="booking_child" style={{ width: "25%" }}>
         <h1 className="booking-text">Departure  </h1>
         <select className="dropdown">
           <option value="" hidden> &#9662;</option>
@@ -125,7 +168,9 @@ function Booking() {
           <option>Option 2</option>
           <option>Option 3</option>
         </select>
-      </div>
+      </div>*/}
+      
+
       <div className="booking_child" style={{ width: "25%" }}>
           <h1 className="booking-text">Arrival  </h1>
         <select className="dropdown">

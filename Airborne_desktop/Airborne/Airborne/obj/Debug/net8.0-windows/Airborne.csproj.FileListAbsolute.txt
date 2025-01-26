@@ -167,3 +167,5 @@ C:\Users\Shukri\Desktop\react-project\Airborne_desktop\Airborne\Airborne\obj\Deb
 C:\Users\Shukri\Desktop\react-project\Airborne_desktop\Airborne\Airborne\obj\Debug\net8.0-windows\ManageUserAccounts.g.cs
 C:\Users\Shukri\Desktop\react-project\Airborne_desktop\Airborne\Airborne\obj\Debug\net8.0-windows\AddModUserAC.baml
 C:\Users\Shukri\Desktop\react-project\Airborne_desktop\Airborne\Airborne\obj\Debug\net8.0-windows\ManageUserAccounts.baml
+C:\Users\Shukri\Desktop\react-project\Airborne_desktop\Airborne\Airborne\obj\Debug\net8.0-windows\Window1.g.cs
+C:\Users\Shukri\Desktop\react-project\Airborne_desktop\Airborne\Airborne\obj\Debug\net8.0-windows\Window1.baml
