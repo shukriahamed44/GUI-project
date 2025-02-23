@@ -7,6 +7,7 @@ import Cta from './components/Cta/Cta';
 import Destinations from './components/Destinations/Destinations';
 import Carousel from './components/Carousel/Carousel';
 import r_image from "/src/images/reg_image.png";
+import { fetchAirports } from './api';
 
 
 
@@ -120,15 +121,57 @@ function Booking() {
   const [airports, setAirports] = useState([]); // State to store fetched airport names
   const [departure, setDeparture] = useState(""); // State for selected departure
   const [arrival, setArrival] = useState(""); // State for selected arrival
+  const [formData, setFormData] = useState({
+    departure: '',
+    arrival: '',
+    passengers: 1
+  });
+
 
   // Fetch airport names from the API
-  useEffect(() => {
-    fetch("http://localhost:3000/airports") // Replace with your backend API URL
+ /* useEffect(() => {
+   fetch("http://localhost:3000/airports") // Replace with your backend API URL
       .then((response) => response.json())
       .then((data) => setAirports(data))
       .catch((error) => console.error("Error fetching airports:", error));
+  }, []);*/
+
+  useEffect(() => {
+    const loadAirports = async () => {
+      try {
+        const data = await fetchAirports();
+        setAirports(data);
+      } catch (error) {
+        console.error("Failed to load airports:", error);
+        alert("Failed to load airport data. Please refresh the page.");
+      }
+    };
+    loadAirports();
   }, []);
 
+  /*const handleSubmit = async (e) => {
+    e.preventDefault();
+    
+    if (formData.departure === formData.arrival) {
+      alert("Departure and arrival airports must be different!");
+      return;
+    }
+
+    try {
+      const booking = {
+        from_airport_id: formData.departure,
+        to_airport_id: formData.arrival,
+        passenger_count: formData.passengers,
+        date: new Date().toISOString().split('T')[0], // Basic date handling
+        price: 1000 * formData.passengers // Simple price calculation
+      };
+
+      const result = await createFlightBooking(booking);
+      alert(`Booking successful!\nBooking ID: ${result.id}\nTotal Price: $${booking.price}`);
+    } catch (error) {
+      alert('Booking failed. Please check your selections and try again.');
+    }
+  };*/
 
 
   return (
