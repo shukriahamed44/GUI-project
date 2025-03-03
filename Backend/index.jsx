@@ -10,8 +10,8 @@ const PORT = 3000;
 app.use(bodyParser.json());
 app.use(cors());
 
-// Connect to SQLite database
-const db = new sqlite3.Database('./database/database.db', (err) => {
+// Connect to SQLite database // databse base path is copied check if it's correct
+const db = new sqlite3.Database('databaseFolder\airports.db', (err) => {
   if (err) {
     console.error("Error connecting to SQLite:", err.message);
   } else {
@@ -21,7 +21,8 @@ const db = new sqlite3.Database('./database/database.db', (err) => {
 
 // Example endpoint: Get all airports from the database
 app.get('/airports', (req, res) => {
-  db.all('SELECT * FROM airports', [], (err, rows) => {
+  const query = 'SELECT airport_Name FROM AirportsList';
+  db.all(query, [], (err, rows) => {
     if (err) {
       res.status(500).json({ error: err.message });
     } else {

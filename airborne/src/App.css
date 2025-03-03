@@ -37,6 +37,7 @@ body {
   padding: 0;
   background-color:#1A1A1A;
   font-family: CreatoDisplay, Arial, Helvetica, sans-serif;
+  z-index: 1;
 
 
 }
@@ -222,21 +223,7 @@ footer {
   /* Add a 2px solid border */
 }
 
-/*.booking_parent{
-  background-color: #070707;
-  border-radius: 20px;
-  width: 80%;
-  height: 100px;
-  margin-top: 50px;
-  color: #555;
-  display: grid;
-  
 
-}
-
-.booking_child{
-  background-color: #070707;
-}*/
 
 .booking_parent {
   display: flex;
@@ -309,4 +296,49 @@ footer {
   color: #5d87b8;
   background-color: #5d87b8;
   position: absolute;
+}
+
+/* Date Picker Styles */
+.date-picker-wrapper {
+  width: 100%;
+  padding: 0 10px;
+}
+
+.date-picker-input {
+  background-color: #070707 !important;
+  border: none !important;
+  color: #e2e2e2 !important;
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  cursor: pointer;
+  padding: 1px;
+}
+
+.react-datepicker__input-container input {
+  background-color: #070707;
+  color: #e2e2e2;
+  border: none;
+  text-align: center;
+}
+
+.react-datepicker {
+  background-color: #1a1a1a;
+  border-color: #313131;
+}
+
+.react-datepicker__header {
+  background-color: #2d2d2d;
+}
+
+.react-datepicker__day {
+  color: #e2e2e2;
+}
+
+.react-datepicker__day--selected {
+  background-color: #5d87b8;
+}
+
+.react-datepicker__day:hover {
+  background-color: #3d5a7d;
 }

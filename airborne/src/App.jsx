@@ -1,54 +1,76 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
-
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import { BrowserRouter as Router, Routes, Route, useNavigate, useLocation } from 'react-router-dom';
+import NewPage from './components/NewPage';
 
 import Xp from './components/Xp/Xp';
 import Cta from './components/Cta/Cta';
+import Parallex from './components/Parallex/Parallex';
 import Destinations from './components/Destinations/Destinations';
 import Carousel from './components/Carousel/Carousel';
 import r_image from "/src/images/reg_image.png";
-import { fetchAirports } from './api';
+import ImageCr from './components/ImageCr/ImageCr';
 
+import { fetchAirports } from './api';
 
 
 function App() {
   return (
-    <div>
-      <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-        <Header />
-        <div style={{width: "100%", height: "240px", backgroundColor: "#5d87b8" }}>
-          <Booking />
-        </div>
+    <Router>
+      <Routes>
+        {/* Main content route */}
+        <Route path="/" element={
+          <div>
+            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+              <Parallex
+                topImage="/src/images/land_window_1.png"
+                bottomImage="/src/images/int.jpg"
+                middleimage="/src/images/land_window_2.png"
+              />
+              <Header />
+              <div style={{width: "100%", height: "50vh", backgroundColor: "#1A1A1A", zIndex: "1", alignItems: "center", justifyItems: "center" }}>
+                <BookingSection/>
+              </div>
+              <Xp/>
+              <Destinations style={{zIndex: "2", backgroundColor: "white"}}/>
+              <main>
+                <h1 style={{fontWeight: "Light"}}>Welcome to Our Private Aviation Company</h1>
+                <p>Fly with us and experience luxury!</p>
+                <section>
+                  <h2>Our Premium Fleet</h2>
+                </section>
+              </main>
+            </div>
+            <div>
+              <hr 
+                style={{
+                  border: 0,
+                  height: "5px",
+                  backgroundColor: "#5d87b8",
+                  margin: "40px 50px 40px 20px",
+                  position: "relative",
+                  overflow: "hidden", 
+                  zIndex: 1,
+                }}
+              /> 
+              <Footer />
+            </div>
+          </div>
+        } />
 
-      <Xp />
-      <Destinations/>
-
-        <main>
-          <h1 style = {{fontWeight: "Light"}}>Welcome to Our Private Aviation Company</h1>
-          <p>Fly with us and experience luxury!</p>
-          <section>
-            <h2>Our Premium Fleet</h2>
-
-          </section>
-        </main>
-
-      </div>
- 
-
-      <div>
-
-        <Carousel/>
-      
-        <Footer />
-      </div>
-    </div>
-
+        {/* New Page route */}
+        <Route path="/new-page" element={<NewPage />} />
+      </Routes>
+    </Router>
   );
 }
 
 
 
 
+import { Link } from 'react-router-dom';
 
 function Header() {
   const imgone = [{src: "/src/images/main_logo.jpg"}];
@@ -56,10 +78,10 @@ function Header() {
     <header>
       <nav>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <li><Link to="/">Home</Link></li>
+          <li><Link to="/about">About Us</Link></li>
+          <li><Link to="/services">Services</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
       <div className="header-c">
@@ -115,128 +137,195 @@ function Footer() {
 
 
 
-function Booking() {
 
 
-  const [airports, setAirports] = useState([]); // State to store fetched airport names
-  const [departure, setDeparture] = useState(""); // State for selected departure
-  const [arrival, setArrival] = useState(""); // State for selected arrival
-  const [formData, setFormData] = useState({
-    departure: '',
-    arrival: '',
-    passengers: 1
-  });
+{/*/////////////////////////////////////// */}
 
 
-  // Fetch airport names from the API
- /* useEffect(() => {
-   fetch("http://localhost:3000/airports") // Replace with your backend API URL
-      .then((response) => response.json())
-      .then((data) => setAirports(data))
-      .catch((error) => console.error("Error fetching airports:", error));
-  }, []);*/
 
+
+function BookingSection() {
+  const [airports, setAirports] = useState([]);
+  const [departure, setDeparture] = useState('');
+  const [arrival, setArrival] = useState('');
+  const [passengers, setPassengers] = useState(1);
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [useSampleData, setUseSampleData] = useState(false);
+
+   // Sample data
+   const sampleAirports = [
+    { id: 1, airport_Name: 'Sample Airport 1' },
+    { id: 2, airport_Name: 'Sample Airport 2' },
+    { id: 3, airport_Name: 'Sample Airport 3' },
+  ];
+
+  // Fetch airports from backend
   useEffect(() => {
-    const loadAirports = async () => {
+    const fetchAirports = async () => {
       try {
-        const data = await fetchAirports();
+        const response = await fetch('http://localhost:3000/airports');
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const data = await response.json();
         setAirports(data);
       } catch (error) {
-        console.error("Failed to load airports:", error);
-        alert("Failed to load airport data. Please refresh the page.");
+        console.error('Error fetching airports:', error);
+        setUseSampleData(true);
       }
     };
-    loadAirports();
+    fetchAirports();
   }, []);
 
-  /*const handleSubmit = async (e) => {
-    e.preventDefault();
-    
-    if (formData.departure === formData.arrival) {
-      alert("Departure and arrival airports must be different!");
-      return;
-    }
+  // Style objects
+  const containerStyle = {
+    display: 'flex',
+    width: '80%',
+    height: '120px',
+    margin: '20px auto',
+    backgroundColor: '#1a1a1a',
+    borderRadius: '10px',
+    boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
+  };
 
-    try {
-      const booking = {
-        from_airport_id: formData.departure,
-        to_airport_id: formData.arrival,
-        passenger_count: formData.passengers,
-        date: new Date().toISOString().split('T')[0], // Basic date handling
-        price: 1000 * formData.passengers // Simple price calculation
-      };
+  const sectionStyle = {
+    flex: 1,
+    borderRight: '1px solid #333',
+    padding: '20px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+    position: 'relative'
+  };
 
-      const result = await createFlightBooking(booking);
-      alert(`Booking successful!\nBooking ID: ${result.id}\nTotal Price: $${booking.price}`);
-    } catch (error) {
-      alert('Booking failed. Please check your selections and try again.');
-    }
-  };*/
+  const dropdownStyle = {
+    width: '100%',
+    backgroundColor: '#1a1a1a',
+    border: 'none',
+    color: '#fff',
+    fontSize: '16px',
+    padding: '8px',
+    outline: 'none',
+    textAlign: 'center'
+  };
+
+  const arrowButtonStyle = {
+    backgroundColor: '#5d87b8',
+    border: 'none',
+    borderRadius: '50%',
+    width: '50px',
+    height: '50px',
+    cursor: 'pointer',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center'
+  };
+
+  // Custom date picker input
+  const CustomDateInput = ({ value, onClick }) => (
+    <button
+      onClick={onClick}
+      style={{
+        ...dropdownStyle,
+        cursor: 'pointer',
+        color: value ? '#fff' : '#666'
+      }}
+    >
+      {value || 'Select Date'}
+    </button>
+  );
+
+  const navigate = useNavigate();
 
 
   return (
-    <div className="booking_parent">
-      <div className="booking_child" style={{ width: "10%" }}>
-        <img
-          src = "src\images\booking_image_one.png"
-          className="imageonefirst"
+    <div style={containerStyle}>
+      {/* Date Picker Section */}
+      <div style={{ ...sectionStyle, flex: 0.8 }}>
+        <h3 style={{ color: '#666', marginBottom: '8px' }}>Date</h3>
+        <DatePicker
+          selected={selectedDate}
+          onChange={(date) => setSelectedDate(date)}
+          minDate={new Date()}
+          customInput={<CustomDateInput />}
+          popperClassName="react-datepicker-dark"
         />
       </div>
-    
 
-      {/*Departure Dropdown */}
-      <div className="booking_child" style={{ width: "25%" }}>
-        <h1 className="booking-text">Departure</h1>
+      {/* Departure Section */}
+      <div style={sectionStyle}>
+        <h3 style={{ color: '#666', marginBottom: '8px' }}>Departure</h3>
         <select
-          className="dropdown"
           value={departure}
           onChange={(e) => setDeparture(e.target.value)}
+          style={dropdownStyle}
         >
-          <option value="" hidden>
-            &#9662; Select Departure
-          </option>
-          {airports.map((airport, index) => (
-            <option key={index} value={airport.airport_Name}>
+          <option value="" hidden>Select Airport</option>
+          {(useSampleData ? sampleAirports : airports).map((airport) => (
+            <option key={airport.id} value={airport.id}>
               {airport.airport_Name}
             </option>
           ))}
         </select>
       </div>
-     
-      {/*<div className="booking_child" style={{ width: "25%" }}>
-        <h1 className="booking-text">Departure  </h1>
-        <select className="dropdown">
-          <option value="" hidden> &#9662;</option>
-          <option>Las Vegas International</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-        </select>
-      </div>*/}
-      
 
-      <div className="booking_child" style={{ width: "25%" }}>
-          <h1 className="booking-text">Arrival  </h1>
-        <select className="dropdown">
-          <option value="" hidden> &#9662;</option>
-          <option>Option 1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
+      {/* Arrival Section */}
+      <div style={sectionStyle}>
+  <h3 style={{ color: '#666', marginBottom: '8px' }}>Arrival</h3>
+  <select
+    value={arrival}
+    onChange={(e) => setArrival(e.target.value)}
+    style={dropdownStyle}
+  >
+    <option value="" hidden>Select Airport</option>
+    {/* Use sample data condition here too */}
+    {(useSampleData ? sampleAirports : airports).map((airport) => (
+      <option key={airport.id} value={airport.id}>
+        {airport.airport_Name}
+      </option>
+    ))}
+  </select>
+</div>
+
+      {/* Passengers Section */}
+      <div style={sectionStyle}>
+        <h3 style={{ color: '#666', marginBottom: '8px' }}>Passengers</h3>
+        <select
+          value={passengers}
+          onChange={(e) => setPassengers(e.target.value)}
+          style={dropdownStyle}
+        >
+          {[1, 2, 3, 4, 5, 6, 7, 8].map((num) => (
+            <option key={num} value={num}>
+              {num}
+            </option>
+          ))}
         </select>
       </div>
-      <div className="booking_child" style={{ width: "25%" }}>
-      <h1 className="booking-text">Passengers  </h1>
-        <select className="dropdown">
-          <option>1</option>
-          <option>Option 2</option>
-          <option>Option 3</option>
-        </select>
-      </div>
-      <div className="booking_child">
-        {/* Fifth part - no dropdown */}
+
+      {/* Arrow Section */}
+      <div style={{ ...sectionStyle, borderRight: 'none', flex: 0.5 }}>
+        <button
+          style={arrowButtonStyle}
+          onClick={() => navigate('/new-page') } //Add navigation logic here
+        >
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="white"
+            strokeWidth="2"
+          >
+            <path d="M5 12h14M12 5l7 7-7 7" />
+          </svg>
+        </button>
       </div>
     </div>
   );
 }
+
 
 
 

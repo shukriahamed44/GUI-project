@@ -1,0 +1,58 @@
+.carousel-container {
+    width: 100%;
+    height: 550px; /* Strictly half of viewport width */
+    margin: 20px;
+    position: relative;
+    left: 0;
+  }
+  
+  .carousel-wrapper {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  
+  .images-container {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    object-fit: contain; /* Show full image without cropping */
+    aspect-ratio: attr(width) / attr(height); /* Maintain image's natural ratio */
+  }
+  
+  /* Keep other button styles the same */
+  .carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s;
+  }
+  
+  .carousel-button:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .carousel-button.prev {
+    left: 10px;
+  }
+  
+  .carousel-button.next {
+    right: 10px;
+  }

@@ -3,7 +3,7 @@ import './Xp.css';
 
 function Xp(){
     return(
-        <div style={{display: "flex", flexDirection: "row", width: "100%", marginTop: "100px"}}>
+        <div style={{display: "flex", flexDirection: "row", width: "100%", marginTop: "0px", zIndex: "1", backgroundColor: "#1A1A1A"}}>
             <div style={{width: "60%",
                     display: "flex", 
                     flexDirection: "column", 
