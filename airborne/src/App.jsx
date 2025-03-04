@@ -306,21 +306,26 @@ function BookingSection() {
 
       {/* Arrow Section */}
       <div style={{ ...sectionStyle, borderRight: 'none', flex: 0.5 }}>
-        <button
-          style={arrowButtonStyle}
-          onClick={() => navigate('/new-page') } //Add navigation logic here
-        >
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="white"
-            strokeWidth="2"
-          >
-            <path d="M5 12h14M12 5l7 7-7 7" />
-          </svg>
-        </button>
+      // In BookingSection component
+<button
+  style={arrowButtonStyle}
+  onClick={() => {
+    const airportsList = useSampleData ? sampleAirports : airports;
+    const departureAirport = airportsList.find(a => a.id === departure);
+    const arrivalAirport = airportsList.find(a => a.id === arrival);
+    
+    navigate('/new-page', {
+      state: {
+        date: selectedDate.toLocaleDateString(),
+        departure: departureAirport?.airport_Name || 'Unknown',
+        arrival: arrivalAirport?.airport_Name || 'Unknown',
+        passengers: passengers
+      }
+    });
+  }}
+>
+  {/* SVG Icon */}
+</button>
       </div>
     </div>
   );
