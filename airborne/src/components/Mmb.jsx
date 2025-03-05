@@ -8,7 +8,7 @@ const Mmb = ({ text, to = "/" }) => {
     <button 
       onClick={() => navigate(to)}
       style={{
-        backgroundColor: 'black',
+        backgroundColor: '#1a1a1a',
         color: 'white',
         padding: '14px 28px',
         borderRadius: '9999px', // Fully rounded corners
@@ -22,7 +22,7 @@ const Mmb = ({ text, to = "/" }) => {
         letterSpacing: '0.5px'
       }}
       onMouseOver={(e) => e.target.style.backgroundColor = '#2c2c2c'}
-      onMouseOut={(e) => e.target.style.backgroundColor = 'black'}
+      onMouseOut={(e) => e.target.style.backgroundColor = '#1a1a1a'}
     >
       {text}
     </button>

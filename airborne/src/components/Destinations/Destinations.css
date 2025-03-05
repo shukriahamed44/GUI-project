@@ -11,7 +11,7 @@
 
 .dest_left{
     width: 50%;
-    height: 640px;
+    height: 740px;
     padding-top: 0px;
     padding-left: 0px;
     padding-right: 10px;
@@ -31,10 +31,10 @@
       align-self: flex-end;
       background-color: #f9f9f9; /*blue_background_thingy*/
       width: 50%;
-      height: 640px;
+      height: 693.5px;
       padding-top: 0px;
       padding-left: 0px;
-      padding-right: 10px;
+      padding-right: 0px;
       padding-bottom: 10px;
       display: flex;
       flex-direction: column;
@@ -58,7 +58,7 @@
 }
 
 .membership{
-    display: flex;
+
     z-index: 2;
     width: 100%;
     background-color: #f9f9f9;
