@@ -342,3 +342,26 @@ footer {
 .react-datepicker__day:hover {
   background-color: #3d5a7d;
 }
+
+/*////////////////////////////////*/
+
+.react-datepicker-dark {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+}
+
+.react-datepicker-dark .react-datepicker__header {
+  background-color: #2d2d2d;
+}
+
+.react-datepicker-dark .react-datepicker__day {
+  color: white;
+}
+
+.react-datepicker-dark .react-datepicker__day--selected {
+  background-color: #5d87b8;
+}
+
+.react-datepicker-dark .react-datepicker__day:hover {
+  background-color: #3d5a7d;
+}

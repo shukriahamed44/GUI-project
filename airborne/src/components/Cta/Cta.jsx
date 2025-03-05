@@ -1,5 +1,6 @@
 import React from 'react';
 import './Cta.css';
+import { useNavigate } from 'react-router-dom';
 
 function Cta({text}) {
     return (
@@ -13,3 +14,6 @@ function Cta({text}) {
   }
 
 export default Cta;
+
+
+

@@ -38,7 +38,7 @@ function Parallex({ topImage, bottomImage, middleimage }) {
     topImage: {
       transform: `scale(${1 + scrollProgress * 9})`,
       opacity: 1, //"opacity: 1 - scrollProgress,"
-      zIndex: 3,
+      zIndex: 5,
       backgroundImage: `url(${topImage})`,
     },
     middleimage: {
@@ -60,7 +60,7 @@ function Parallex({ topImage, bottomImage, middleimage }) {
   };
 
   return (
-    <div style={{ minHeight: '200vh' }}>
+    <div style={{ minHeight: '130vh' }}>
       <div style={imageStyles.container}>
         <div style={{ ...imageStyles.baseImage, ...imageStyles.middleimage }} />
         <div style={{ ...imageStyles.baseImage, ...imageStyles.bottomImage }} />
@@ -76,10 +76,10 @@ function Parallex({ topImage, bottomImage, middleimage }) {
         textAlign: 'center'
       }}>
         {/*<h1>Scroll down to see the parallax effect</h1>*/}
-        <div style={{ height: '120vh' }}>
+        {/* <div style={{ height: '120vh' }}>
         <h1>Nice upper effect!</h1>
-        </div>
-        <div style={{ height: '100vh' }}>
+        </div> */}
+        <div style={{ height: '0vh' }}>
         <ul>
           
           <li><img
@@ -92,7 +92,7 @@ function Parallex({ topImage, bottomImage, middleimage }) {
         </ul>
       </div>
         </div>
-        <h1>Niceasasa effect!</h1>
+        
       </div>
     
   );

@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import './Destinations.css';
 import Cta from '../Cta/Cta';
+import Mmb from '../Mmb';
+import { useNavigate } from 'react-router-dom';
 
 
 
@@ -96,6 +98,12 @@ function Destinations(){
 
         <div style={{paddingLeft: "120px", margin: "0px", paddingTop: "0px"}}>
           <Cta text = "Login to become a member"/>
+          <Mmb text="Login to become a member" to="/login" style={{ zIndex: 3, position: "relative" }} />
+          
+        </div>
+        <div style={{paddingLeft: "120px", margin: "0px", paddingTop: "0px", zIndex: "1"}}>
+          
+          <Mmb text="Login to become a member" to="/login" />
         </div>
       
     </div>

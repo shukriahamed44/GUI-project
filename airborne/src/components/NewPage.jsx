@@ -53,18 +53,22 @@ const NewPage = () => {
 
   return (
     <div style={{
-      maxWidth: '800px',
-      margin: '40px auto',
+      width: '1200px',
+      //maxWidth: '1800px',
+      
+      margin: '30px auto',
+      marginLeft:'130px',
       padding: '20px',
       background: '#2B2B2B',
       borderRadius: '12px',
       boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
-      fontFamily: 'Arial, sans-serif'
+      alignItems: 'center',  
+      
     }}>
       <h1 style={{ textAlign: 'center' }}>Flight Checkout</h1>
       
       <div style={{
-        background: 'white',
+        
         padding: '25px',
         borderRadius: '8px',
         marginBottom: '30px'
@@ -80,23 +84,23 @@ const NewPage = () => {
             display: 'flex',
             justifyContent: 'space-between',
             padding: '12px 0',
-            borderBottom: index < 3 ? '1px solid #eee' : 'none'
+            borderBottom: index < 3 ? '1px solid #525252' : 'none'
           }}>
-            <span style={{ color: '#666', fontWeight: 600 }}>{item.label}:</span>
+            <span style={{ color: '#7C7C7C', fontWeight: 600 }}>{item.label}:</span>
             <span>{item.value}</span>
           </div>
         ))}
       </div>
 
       <div style={{
-        background: 'white',
+        background: '#3b3b3b',
         padding: '25px',
         borderRadius: '8px',
         marginBottom: '30px'
       }}>
         <h2>Passenger Information</h2>
         {passengerDetails.map((passenger, index) => (
-          <div key={index} style={{ marginBottom: '20px' }}>
+          <div key={index} style={{ marginBottom: '20px', backgroundColor: '#3b3b3b' }}>
             <h3>Passenger {index + 1}</h3>
             <input
               type="text"
@@ -104,9 +108,9 @@ const NewPage = () => {
               value={passenger.name}
               onChange={(e) => handleInputChange(index, 'name', e.target.value)}
               style={{
-                width: '100%',
+                width: '95%',
                 padding: '12px',
-                margin: '8px 0',
+                margin: '8px 10px 10px 10px',
                 border: '1px solid #ddd',
                 borderRadius: '4px',
                 fontSize: '16px'
@@ -119,9 +123,9 @@ const NewPage = () => {
               value={passenger.idNumber}
               onChange={(e) => handleInputChange(index, 'idNumber', e.target.value)}
               style={{
-                width: '100%',
+                width: '95%',
                 padding: '12px',
-                margin: '8px 0',
+                margin: '8px 10px 10px 10px',
                 border: '1px solid #ddd',
                 borderRadius: '4px',
                 fontSize: '16px'
@@ -133,7 +137,7 @@ const NewPage = () => {
       </div>
 
       <div style={{
-        background: 'white',
+        
         padding: '25px',
         borderRadius: '8px'
       }}>
@@ -188,6 +192,7 @@ const NewPage = () => {
           border: 'none',
           padding: '15px 30px',
           borderRadius: '25px',
+          marginBottom: '15px',
           fontSize: '18px',
           cursor: paymentMethod ? 'pointer' : 'not-allowed',
           width: '100%',
