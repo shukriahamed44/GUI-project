@@ -8,8 +8,8 @@ import { useNavigate } from 'react-router-dom';
 
 function Destinations(){
   return(
-    <div style={{width: "100%"}}>
-      <div className="dest" style={{display: "flex", flexDirection:"row", height: "650px"}} >
+    <div style={{width: "100%", backgroundColor: "white", margin: '0'}}>
+      <div className="dest" style={{display: "flex", flexDirection:"row", height: "100vh"}} >
         <div className="dest_left">
           <h1 style ={{paddingLeft: "100px", fontSize: "3rem", borderTop: "2px solid #818181", paddingTop: "12px", marginRight:"150px"}} >
             Featured Gateways

@@ -36,7 +36,7 @@ function Parallex({ topImage, bottomImage, middleimage }) {
       transition: 'transform 0.3s ease-out, opacity 0.3s ease-out',
     },
     topImage: {
-      transform: `scale(${1 + scrollProgress * 9})`,
+      transform: `scale(${1 + scrollProgress * 13})`,
       opacity: 1, //"opacity: 1 - scrollProgress,"
       zIndex: 5,
       backgroundImage: `url(${topImage})`,
@@ -53,8 +53,8 @@ function Parallex({ topImage, bottomImage, middleimage }) {
     bottomImage: {
       //transform: `scale(${1 + scrollProgress * 0.2})`,
       //filter: `blur(${5 - (scrollProgress * 5)}px)`,
-      zIndex: 1,
-      position: 'relative',
+      zIndex: 0,
+      position: 'absolute',
       backgroundImage: `url(${bottomImage})`,
     },
   };

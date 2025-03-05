@@ -31,63 +31,12 @@ function App() {
           <div>
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
               <Parallex
-                topImage="/src/images/land_window_1.png"
-                bottomImage="/src/images/int.jpg"
+                topImage="/src/images/land_window_11.png"
+                bottomImage="/src/images/fxsa.png"
                 middleimage="/src/images/land_window_2.png"
               />
 
- {/* <div style={{
-  width: '80%',
-  margin: '0 auto',
-  padding: '20px 0',
-  display: 'flex',
-  justifyContent: 'space-between',
-  backdropFilter: 'blur(10px)',
-  backgroundColor: 'rgba(255, 255, 255, 0.1)',
-  borderRadius: '12px',
-  boxShadow: '0 2px 10px rgba(0,0,0,0.1)'
-}}>
-  <ul style={{
-    display: 'flex',
-    listStyle: 'none',
-    width: '100%',
-    justifyContent: 'space-around',
-    margin: 0,
-    padding: 0
-  }}>
-    {[
-      { path: "/", text: "Home" },
-      { path: "/about", text: "About Us" },
-      { path: "/services", text: "Services" },
-      { path: "/contact", text: "Contact", targetId: "footer" }
-    ].map((item, index) => (
-      <li key={index}>
-        <Link
-          to={item.path}
-          style={{
-            color: 'white',
-            padding: '12px 20px',
-            textDecoration: 'none',
-            transition: 'color 0.3s ease',
-            fontSize: '16px'
-          }}
-          onMouseOver={(e) => e.target.style.color = '#5d87b8'}
-          onMouseOut={(e) => e.target.style.color = 'white'}
-          onClick={(e) => {
-            if (item.targetId) {
-              e.preventDefault();
-              document.getElementById(item.targetId)?.scrollIntoView({
-                behavior: 'smooth'
-              });
-            }
-          }}
-        >
-          {item.text}
-        </Link>
-      </li>
-    ))}
-  </ul>
-</div>  */}
+
 
 
 
@@ -177,13 +126,16 @@ function App() {
     ))}
   </ul>
 </div>
-<h1 style ={{height: '40vh'}}></h1>
+<h1 style ={{height: '10vh'}}></h1>
 
               
-              <div style={{width: "100%", height: "50vh", backgroundColor: "#1A1A1A", zIndex: "1", alignItems: "center", justifyItems: "center" }}>
+              <div style={{width: "100%", height: "50vh", backgroundColor: "#1A1A1A", zIndex: "1", alignItems: "center", justifyItems: "center", borderBottom: '2px solid #464646', }}>
                 <BookingSection/>
               </div>
+              
+              
               <Xp/>
+              
               <Destinations style={{zIndex: "2", backgroundColor: "white"}}/>
               <Mmb text="Login to become a member" to="/login"  style={{zIndex: '2'}}/>
               <main>
@@ -530,8 +482,11 @@ function BookingSection() {
     display: 'flex',
     width: '80%',
     height: '120px',
-    margin: '20px auto',
-    backgroundColor: '#1a1a1a',
+    margin: '100px auto',
+    
+    
+    marginTop: '100px',
+    backgroundColor: '#242424',
     borderRadius: '10px',
     boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
   };
@@ -549,7 +504,7 @@ function BookingSection() {
 
   const dropdownStyle = {
     width: '100%',
-    backgroundColor: '#1a1a1a',
+    backgroundColor: '#242424',
     border: 'none',
     color: '#fff',
     fontSize: '16px',
@@ -618,7 +573,7 @@ return (
           >
             {selectedDate ? (
               <>
-                <FiCalendar size={16} color="#fff" />
+                <FiCalendar size={16} color="#aaaaaa" /> {/*below calendar icon*/}
                 {selectedDate.toLocaleDateString()}
               </>
             ) : (
@@ -740,7 +695,8 @@ return (
       borderRight: 'none',
       flex: 0.5,
       justifyContent: 'center',
-      backgroundColor: ' #1a1a1a'
+      backgroundColor: ' #242424',
+      borderRadius: '10px'
     }}>
       <button
         style={{
