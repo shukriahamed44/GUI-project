@@ -158,8 +158,8 @@ function App() {
                   zIndex: 1,
                 }}
               /> 
-              <Footer id = '/contact'/>
-              <Futar />
+              {/* <Footer id = '/contact'/> */}
+              <Futar id="contact" />
 
             </div>
           </div>

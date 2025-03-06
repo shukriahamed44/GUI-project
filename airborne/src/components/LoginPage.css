@@ -1,0 +1,137 @@
+
+:root {
+    --primary-color: #85b2db;
+    --gradient-bg: linear-gradient(135deg, #85b2db 0%, #a8d8ff 100%);
+    --white: #ffffff;
+    --dark-gray: #333333;
+    margin:0px auto;
+  }
+  
+  .login-container {
+    min-height: 100vh;
+    margin:0px auto;
+    background: var(--gradient-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 259.7%;
+  }
+  
+  .login-card {
+    background: var(--white);
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+    padding: 40px;
+    text-align: center;
+  }
+  
+  .logo-section {
+    margin-bottom: 30px;
+  }
+  
+  .logo-icon {
+    font-size: 48px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+  }
+  
+  .login-card h1 {
+    color: var(--dark-gray);
+    font-weight: 600;
+    margin: 0 0 8px;
+  }
+  
+  .login-card p {
+    color: #666;
+    margin: 0 0 30px;
+  }
+  
+  .input-group {
+    position: relative;
+    width: 86.5%;
+    margin-bottom: 25px;
+  }
+  
+  .input-icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 18px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 15px 12px 45px;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: var(--primary-color);
+    outline: none;
+  }
+  
+  .login-btn {
+    width: 100%;
+    padding: 14px;
+    background: var(--gradient-bg);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    margin-bottom: 20px;
+  }
+  
+  .login-btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .form-footer {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .forgot-password {
+    color: var(--primary-color);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+  }
+  
+  .forgot-password:hover {
+    color: #5a90c2;
+  }
+  
+  .form-footer a {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  .form-footer a:hover {
+    text-decoration: none;
+  }
+  
+  @media (max-width: 480px) {
+    .login-card {
+      padding: 30px;
+    }
+    
+    .logo-icon {
+      font-size: 36px;
+    }
+    
+    input {
+      padding: 10px 15px 10px 45px;
+    }
+  }

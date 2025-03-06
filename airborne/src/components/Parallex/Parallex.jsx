@@ -36,7 +36,7 @@ function Parallex({ topImage, bottomImage, middleimage }) {
       transition: 'transform 0.3s ease-out, opacity 0.3s ease-out',
     },
     topImage: {
-      transform: `scale(${1 + scrollProgress * 13})`,
+      transform: `scale(${1 + scrollProgress * 13 })`,
       opacity: 1, //"opacity: 1 - scrollProgress,"
       zIndex: 5,
       backgroundImage: `url(${topImage})`,
@@ -80,16 +80,37 @@ function Parallex({ topImage, bottomImage, middleimage }) {
         <h1>Nice upper effect!</h1>
         </div> */}
         <div style={{ height: '0vh' }}>
-        <ul>
-          
-          <li><img
-            src="/src/images/main_logo.jpg" // Updated to include the correct Vite-compatible path.
-            alt="Airborne logo"
-            style={{ width: "60%", height: "auto", marginTop: "80px" }}
-          /></li>
-          
-          <li><div><Cta text = "Book a Flight" /></div></li>
-        </ul>
+        <ul style={{
+  margin: '300px 400px 30px 30px',
+  height: '20vh',
+  listStyle: 'none', // Add this line
+  padding: 0, // Optional: Remove default padding
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'flex-start'
+}}>
+  <li style={{padding: '0', margin: '0'}}>
+    <div style={{padding: '0', margin: '0', display: 'flex', alignContent: 'flex-start'}}>
+    <img
+      src="/src/images/main_logo.jpg"
+      alt="Airborne logo"
+      style={{ width: "60%", height: "auto", marginTop: "80px", marginleft:"3px auto", paddingLeft: "0px" }}
+    />
+    </div>
+  </li>
+  <li style={{
+    padding: 0,
+    marginTop: '20px', // Add spacing between logo and button
+    display: 'flex',
+    justifyContent: 'flex-start'
+  }}>
+    
+
+     <div style={{ width: '400px', height: '60px', display : 'flex', alignItems: 'flex-start', marginLeft: '10px' }}>
+      <Cta text="Book a Flight" />
+    </div> 
+  </li>
+</ul>
       </div>
         </div>
         
